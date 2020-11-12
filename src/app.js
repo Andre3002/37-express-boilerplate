@@ -6,7 +6,7 @@ const cors = require('cors')
 const { NODE_ENV } = require('./config')
 
 const app = express()
-
+console.log(NODE_ENV)
 const morganOption = (NODE_ENV === 'production')
     ? 'tiny'
     : 'common';
